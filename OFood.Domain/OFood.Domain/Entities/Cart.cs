@@ -6,5 +6,5 @@ public class Cart : Entity<long>
 {
     public int CartCount { get; set; }
 
-    public long CartIdLong { get; set;}
+    public long CartIdLdddong { get; set;}
 }
