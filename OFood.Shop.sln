@@ -130,7 +130,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmsService", "SmsService", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsService", "src\ThirdPartyService\SmsService\SmsService.csproj", "{A49B025A-35E5-4126-9C5F-0C800DAA5ED9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Submodules", "Submodules", "{24299046-FD37-41A5-8647-EBBA92FE97C9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VendorSubModule", "VendorSubModule", "{24299046-FD37-41A5-8647-EBBA92FE97C9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OFood.Domain", "OFood.Domain\OFood.Domain\OFood.Domain.csproj", "{DE5C9F6D-A50A-4615-A0B7-E92CBF403982}"
 EndProject
