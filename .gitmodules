@@ -1,0 +1,3 @@
+[submodule "OFood.Domain"]
+	path = OFood.Domain
+	url = https://github.com/ForexDeveloper/OFood.Domain.git
