@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0</TargetFrameworks>
+	  <RootNamespace>Caching.Abstractions</RootNamespace>
+	  <SonarQubeTestProject>true</SonarQubeTestProject>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\CasheProvider\CacheHelper\CacheHelper.csproj" />
+    <ProjectReference Include="..\..\Framework\Core\Framework.Core.Domain\Framework.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\Framework\Core\Framework.Core.Security\Framework.Core.Security.csproj" />
+  </ItemGroup>
+
+</Project>

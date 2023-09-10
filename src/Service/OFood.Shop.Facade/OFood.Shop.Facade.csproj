@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<SonarQubeTestProject>false</SonarQubeTestProject>
+		<LangVersion>10.0</LangVersion>
+		<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+		<RootNamespace>OFood.Shop.Facade</RootNamespace>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\OFood.Shop.Application.Contract\OFood.Shop.Application.Contract.csproj" />
+    <ProjectReference Include="..\..\Application\OFood.Shop.Application\OFood.Shop.Application.csproj" />
+    <ProjectReference Include="..\..\Common\CasheProvider\CacheHelper\CacheHelper.csproj" />
+    <ProjectReference Include="..\..\Common\CasheProvider\Serializer\Serializer.csproj" />
+    <ProjectReference Include="..\..\Query\OFood.Shop.Query\OFood.Shop.Query.csproj" />
+    <ProjectReference Include="..\..\ThirdPartyService\MapService\MapService.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" />
+		<PackageReference Include="MediatR" />
+		<PackageReference Include="FluentValidation.AspNetCore" />
+
+		<PackageReference Include="Polly" />
+		<PackageReference Include="Mapster" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" />
+	</ItemGroup>
+	
+</Project>

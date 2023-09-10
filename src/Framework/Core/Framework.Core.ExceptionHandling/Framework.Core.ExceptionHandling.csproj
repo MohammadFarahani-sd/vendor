@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<SonarQubeTestProject>false</SonarQubeTestProject>
+		<IsPackable>true</IsPackable>
+		<Version>$(VersionPrefix)1.0.2</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Framework.Core.Logging\Framework.Core.Logging.csproj" />
+	</ItemGroup>
+
+</Project>

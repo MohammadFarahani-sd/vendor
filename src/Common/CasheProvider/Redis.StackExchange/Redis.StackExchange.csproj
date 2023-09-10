@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0</TargetFrameworks>
+		<RootNamespace>Redis.StackExchange</RootNamespace>
+		<SonarQubeTestProject>true</SonarQubeTestProject>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="StackExchange.Redis" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Serializer\Serializer.csproj" />
+	</ItemGroup>
+
+</Project>

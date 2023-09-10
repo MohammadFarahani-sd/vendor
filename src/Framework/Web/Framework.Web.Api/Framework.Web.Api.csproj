@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<SonarQubeTestProject>false</SonarQubeTestProject>
+		<IsPackable>true</IsPackable>
+		<Version>$(VersionPrefix)1.0.8</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" />
+		<PackageReference Include="Swashbuckle.AspNetCore" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\Framework.Core.Domain\Framework.Core.Domain.csproj" />
+		<ProjectReference Include="..\..\Core\Framework.Core.ExceptionHandling\Framework.Core.ExceptionHandling.csproj" />
+		<ProjectReference Include="..\..\Core\Framework.Core.Query\Framework.Core.Query.csproj" />
+		<ProjectReference Include="..\..\Core\Framework.Core.Security\Framework.Core.Security.csproj" />
+	</ItemGroup>
+
+</Project>

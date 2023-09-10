@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0</TargetFrameworks>
+		<RootNamespace>Caching.Redis</RootNamespace>
+		<SonarQubeTestProject>true</SonarQubeTestProject>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="StackExchange.Redis" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Caching.Abstractions\Caching.Abstractions.csproj" />
+		<ProjectReference Include="..\Redis.StackExchange\Redis.StackExchange.csproj" />
+		<ProjectReference Include="..\Serializer\Serializer.csproj" />
+	</ItemGroup>
+</Project>

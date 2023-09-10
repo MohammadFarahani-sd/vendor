@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>Common.BuildingBlocks.EventBusServiceBus</RootNamespace>
+		<SonarQubeTestProject>true</SonarQubeTestProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" />
+		<PackageReference Include="Microsoft.Azure.ServiceBus" />
+		<PackageReference Include="Microsoft.Extensions.Logging" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EventBus\EventBus.csproj" />
+	</ItemGroup>
+
+</Project>

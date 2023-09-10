@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<SonarQubeTestProject>false</SonarQubeTestProject>
+		<IsPackable>true</IsPackable>
+		<Version>$(VersionPrefix)1.0.4</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\Framework.Core.Security\Framework.Core.Security.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>10.0</LangVersion>
+		<AssemblyName>OFood.Shop.Application.Contract</AssemblyName>
+		<RootNamespace>OFood.Shop.Application.Contract</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" />
+		<PackageReference Include="MediatR" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Common\Common.EventBus\EventBus\EventBus.csproj" />
+	  <ProjectReference Include="..\..\Common\Common.EventBus\IntegrationEventLogEF\IntegrationEventLogEF.csproj" />
+	  <ProjectReference Include="..\..\Framework\Core\Framework.Core.Spatial\Framework.Core.Spatial.csproj" />
+	</ItemGroup>
+</Project>

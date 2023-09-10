@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<IsPackable>false</IsPackable>
+		<SonarQubeTestProject>true</SonarQubeTestProject>
+		<RootNamespace>OFood.Shop.Integration.Test</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentAssertions" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="xunit" />
+		<PackageReference Include="xunit.runner.visualstudio" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+		<PackageReference Include="coverlet.collector" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Common\OFood.Shop.Common\OFood.Shop.Common.csproj" />
+	  <ProjectReference Include="..\..\src\Framework\Core\Framework.Core\Framework.Core.csproj" />
+	  <ProjectReference Include="..\..\src\Framework\Web\Framework.Web.Api\Framework.Web.Api.csproj" />
+	  <ProjectReference Include="..\..\src\Service\OFood.Shop.Api\OFood.Shop.Api.csproj" />
+	  <ProjectReference Include="..\OFood.Shop.TestUtilities\OFood.Shop.TestUtilities.csproj" />
+	</ItemGroup>
+	
+
+</Project>

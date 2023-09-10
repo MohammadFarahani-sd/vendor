@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+    shop:
+        image: ${DOCKER_REGISTRY-}foodshop
+        networks:
+            - network
+        build:
+            context: .
+            dockerfile: ./src/Service/OFood.Shop.Api/ci/Dockerfile
+    

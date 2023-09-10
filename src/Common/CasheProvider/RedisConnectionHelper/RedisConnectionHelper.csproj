@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<SonarQubeTestProject>true</SonarQubeTestProject>
+		<RootNamespace>RedisConnectionHelper</RootNamespace>
+		<SonarQubeTestProject>true</SonarQubeTestProject>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="StackExchange.Redis" />
+
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ObjectPoolHelper\ObjectPoolHelper.csproj" />
+	</ItemGroup>
+
+</Project>

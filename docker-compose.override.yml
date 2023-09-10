@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+    
+    shop:
+        container_name: foodshop
+        restart: on-failure
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+        volumes:
+            - ${HOME}/.microsoft/usersecrets/:/root/.microsoft/usersecrets
+        ports:
+            - "630:80"

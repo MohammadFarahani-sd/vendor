@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<RootNamespace>OFood.Shop.Query</RootNamespace>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" />
+
+		<PackageReference Include="Microsoft.EntityFrameworkCore" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
+
+		<PackageReference Include="Polly" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="MediatR" />
+		<PackageReference Include="Mapster" />
+		<PackageReference Include="Newtonsoft.Json" />
+
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Framework\Core\Framework.Core.Query\Framework.Core.Query.csproj" />
+		<ProjectReference Include="..\..\Framework\Core\Framework.Core.Security\Framework.Core.Security.csproj" />
+		<ProjectReference Include="..\..\Framework\Core\Framework.Core.Spatial\Framework.Core.Spatial.csproj" />
+	</ItemGroup>
+
+</Project>

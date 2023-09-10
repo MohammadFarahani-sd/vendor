@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+
+    redisdb:
+        image: redis:alpine
+        networks:
+            - default
+    sqldb:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        networks:
+            - default
+
+    rabbitmq:
+        image: rabbitmq:management
+        networks:
+            - default
+
+networks: 
+     default: 
+       external: true
+       name: appliance 
+
+
+    
+
+  
